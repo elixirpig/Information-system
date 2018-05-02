@@ -1,0 +1,39 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/system.css' %}">
+</head>
+<body>
+<div class="wraper">
+    <div class="main">
+        <div class="header">
+            <div class="logo"></div>
+            <ul class="menu">
+                <li><p><a href="">Каталог</a></p></li>
+                <li><p><a href="">Поставка</a></p></li>
+                <li><p><a href="">Поставщик</a></p></li>
+            </ul>
+        </div>
+            <div class="content">
+                    <table class="table">
+                    <tr ><th>ID</th><th>Название продукта</th><th>Производитель</th><th>Цена</th><th>Группа товара</th></tr>
+                    {% for i in catalogs %}
+                    <tr>
+                        <td>{{ i.id }}</td>
+                        <td>{{ i.name_product }}</td>
+                        <td>{{ i.manufacturer }}</td>
+                        <td>{{ i.price }}</td>
+                        <td>{{ i.groups_products }}</td>
+                    </tr>
+                    {% endfor %}
+                    </table>
+
+            </div>
+    </div>
+
+</div>
+</body>
+</html>
