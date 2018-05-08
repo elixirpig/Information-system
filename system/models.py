@@ -11,6 +11,9 @@ class Provider(models.Model):
     street = models.CharField(max_length= 64)
     number_street = models.IntegerField()
 
+    def __str__(self):
+        return self.name_provider
+
 
 class Groups(models.Model):
     class Meta:

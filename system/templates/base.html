@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ИС</title>
+    <link rel="stylesheet" href="{% static 'css/system.css' %}">
+</head>
+<body>
+<div class="wraper">
+    <div class="main">
+        <div class="header">
+            <div class="logo"></div>
+            <ul class="menu">
+                <li><p><a href="{% url 'catalog_list' %}">Каталог</a></p></li>
+                <li><p><a href="{% url 'supply_list' %}">Поставка</a></p></li>
+                <li><p><a href="{% url 'provider_list' %}">Поставщик</a></p></li>
+            </ul>
+        </div>
+            <div class="content">
+                    {% block content %}
+                    {% endblock %}
+            </div>
+    </div>
+</div>
+</body>
+</html>
