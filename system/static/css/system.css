@@ -29,27 +29,54 @@
     }
     .menu{
         margin-left: 175px;
-        margin-top: -30px;
-    }
+        margin-top: -40px;
+        height: 40px;
+      }
     ul li{
         list-style: none;
         margin-left: 20px;
         display: inline-block;
+        height: 40px;
     }
     a{
         text-decoration: none;
         color: #000000;
     }
-    a:hover{
-        text-decoration: underline;
-        color: red;
-    }
     p{
         font-size: 20px;
+        text-align: center;
+        margin-top: 8px;
     }
     td{
-        border: 2px solid black;
+        border: 2px solid #000000;
     }
     th{
-        border: 2px solid black;
+        border: 2px solid #000000;
+    }
+    .table{
+        border: 2px solid #000000;
+
+    }
+    .product_form{
+        margin-left: 5px;
+        display: -webkit-box;
+        border: 2px solid;
+    }
+    .save_btn{
+        margin-top: 40px;
+        margin-left: -450px;
+        height: 50px;
+        width: 103px;
+        font-size: 20px;
+    }
+    li:hover{
+        background: white;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    .new_product{
+        font-size: 20px;
+        color: red;
     }
