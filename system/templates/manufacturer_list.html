@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <a href="{% url 'new_manufacturer' %}" class="new_product"><span class="glyphicon glyphicon-plus"></span></a>
+      <table class="table">
+          <tr ><th>ID</th><th>Производитель</th><th>Страна</th>
+          {% for i in manufacturers %}
+                    <tr>
+                        <td>{{ i.id }}</td>
+                        <td>{{ i.name_manufacturer }}</td>
+                        <td>{{ i.country }}</td>
+                    </tr>
+                    {% endfor %}
+                 </table>
+{% endblock %}

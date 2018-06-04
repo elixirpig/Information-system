@@ -1,11 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>Новый Продукт</h1>
+    <h1>Новая Постака</h1>
     <form method="post" class="product_form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save_btn">Сохранить</button>
     </form>
 {% endblock %}
-
 
 

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    <a href="{% url 'new_group' %}" class="new_product"><span class="glyphicon glyphicon-plus"></span></a>
+      <table class="table">
+          <tr ><th>ID</th><th>Группа товара</th>
+          {% for i in groups %}
+                    <tr>
+                        <td>{{ i.id }}</td>
+                        <td>{{ i.groups_products }}</td>
+                    </tr>
+                    {% endfor %}
+                 </table>
+{% endblock %}

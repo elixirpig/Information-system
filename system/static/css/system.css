@@ -19,7 +19,9 @@
     .logo{
         width: 80px;
         height: 40px;
-        background-color: #000000;
+        background-color: gray;
+        text-align: center;
+        padding-top: 1px;
     }
     .content{
         width: 1200px;
@@ -43,9 +45,10 @@
         color: #000000;
     }
     p{
-        font-size: 20px;
+        font-size: 17px;
         text-align: center;
         margin-top: 8px;
+        padding-right: 5px;
     }
     td{
         border: 2px solid #000000;
@@ -61,10 +64,32 @@
         margin-left: 5px;
         display: -webkit-box;
         border: 2px solid;
+        width: 1220px;
+    }
+    .group_form{
+        border: 2px solid;
+    }
+    .manufacturer_form{
+        border: 2px solid;
+        margin-left: 150px;
+        display: -webkit-box;
     }
     .save_btn{
         margin-top: 40px;
-        margin-left: -450px;
+        margin-left: -595px;
+        height: 50px;
+        width: 103px;
+        font-size: 20px;
+    }
+    .save_btn2{
+        height: 50px;
+        width: 103px;
+        font-size: 20px;
+        margin-left: 590px;
+    }
+    .save_btn3{
+        margin-top: 40px;
+        margin-left: -250px;
         height: 50px;
         width: 103px;
         font-size: 20px;
@@ -79,4 +104,33 @@
     .new_product{
         font-size: 20px;
         color: red;
+    }
+
+    h1{
+        text-align: center;
+    }
+    h2{
+        font-size: 13px;
+        color: black;
+     }
+    .block1{
+        width: 970px;
+        height: 471px;
+        margin-left: 100px;
+
+    }
+    .image{
+        margin-left: 300px;
+        margin-top: 20px;
+    }
+    .image2{
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+    .about{
+        display: grid;
+        margin-left: 360px;
+    }
+    span{
+        font-size: 17px;
     }

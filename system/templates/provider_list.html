@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
+    <a href="{% url 'new_provider' %}" class="new_product"><span class="glyphicon glyphicon-plus"></span></a>
      <table class="table">
          <tr ><th>ID</th><th>Название</th><th>Телефон</th><th>Улица</th><th>Номер улицы</th></tr>
          {% for i in providers %}
-             <tr>
                  <td>{{ i.id }}</td>
-                 <td>{{ i.name_provider }}</td>
+             <td>{{ i.name_provider }}</td>
                  <td>{{ i.phone }}</td>
                  <td>{{ i.street }}</td>
                  <td>{{ i.number_street}}</td>
@@ -13,3 +13,5 @@
          {% endfor %}
      </table>
 {% endblock %}
+
+
